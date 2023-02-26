@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#displays Best school 10 times but the 9th interation include hi on a new line
+
+x=0
+while [ $x -lt 9 ]
+do
+	echo "Best School"
+	x=$(($x + 1))
+	if [ $x -eq 8 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	fi
+done
