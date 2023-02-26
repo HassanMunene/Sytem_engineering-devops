@@ -4,7 +4,7 @@
 x=0
 while [ $x -lt 10 ]
 do
-	x=$(($x + 1))
+	x=$((x + 1))
 	if [ $x -eq 4 ]
 	then
 		echo "bad luck"
