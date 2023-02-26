@@ -5,7 +5,7 @@ x=0
 while [ $x -lt 9 ]
 do
 	echo "Best School"
-	x=$(($x + 1))
+	x=$((x + 1))
 	if [ $x -eq 8 ]
 	then
 		echo "Best School"
