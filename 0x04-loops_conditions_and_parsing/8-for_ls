@@ -5,7 +5,7 @@ for file in *
 do
 	if [[ "$file" == *-* ]]
 	then
-		echo" ${file#*-}"
+		echo "${file#*-}"
 	else
 		echo "$file"
 	fi
