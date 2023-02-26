@@ -11,6 +11,6 @@ do
 		echo $j
 		j=$((j + 1))
 	done
-	x=$(($x + 1))
+	x=$((x + 1))
 	j=1
 done
