@@ -20,6 +20,6 @@ do
 		*)
 			echo $x
 	esac
-	x=$(($x + 1))
+	x=$((x + 1))
 done
 
