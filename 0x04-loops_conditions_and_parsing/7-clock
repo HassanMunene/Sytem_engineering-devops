@@ -6,7 +6,7 @@ j=1
 while [ $x -le 12 ]
 do
 	echo "Hour: $x"
-	while [ j -le 59 ]
+	while [ $j -le 59 ]
 	do
 		echo $j
 		j=$((j + 1))
