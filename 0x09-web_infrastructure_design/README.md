@@ -48,3 +48,39 @@ Server: Nginx/2.4.29 (Ubuntu)
 ```
 
 ![1-server structure](https://github.com/HassanMunene/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/imgs/image.jpg)
+
+# 3-SERVER WEB INFRASTRUCTURE & LOAD BALANCER(HAproxy)
+In a type of infrastrucutre we will have to add 2 more servers and 1 loadbalancer(HAproxy) This is necessary because when the traffic inreases and the requests becomes too many for once server to handle we need to add more servers. well when we add those servers, how do we now know which request to go to server1 and which request to go to server2 and so on. This is where the loadbalancer comes in to help us. A load balancer is like a traffic cop that direct cars in a busy junction. 
+
+## Load Balancer - It is used to distribute incoming traffic across multiple web servers. This improves the availability and scalability of the website by allowing multiple web servers to handle the requests.
+
+The algorithm that we will use to redirect the request is the round robin algorithm whereby the requests are distributed across the group of servers sequentially and evenly 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
