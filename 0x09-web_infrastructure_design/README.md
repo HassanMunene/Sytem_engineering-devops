@@ -77,3 +77,7 @@ No firewall in this system, there is no HTTP. Without firewall the servers are v
 ## Monitoring
 
 There is no monitoring setup for this infrastructure, which makes it difficult to detect and address issues in a timely manner. Monitoring tools should be implemented to alert administrators of any issues and provide insights into system performance.
+
+# SECURED AND MONITORED WEB INFRASTRUCTURE
+
+
