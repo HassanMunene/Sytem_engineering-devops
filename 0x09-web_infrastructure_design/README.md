@@ -47,3 +47,4 @@ Server: Nginx/2.4.29 (Ubuntu)
 </html>
 ```
 
+![1-server structure](https://github.com/HassanMunene/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/imgs/image.jpg)
