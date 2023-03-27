@@ -22,5 +22,28 @@ Referer: http://www.foobar.com/
 
 4. The webserver we are sending our request too is protected by a firewall which is a security device that monitors and controls incoming and outgoing network traffic based on a set of rules
 
-5. After the request has been allowed in by the firewall, the incoming request is received by the web server which in our case is Nginx server 
+5. After the request has been allowed in by the firewall, the incoming request is received by the web server which in our case is Nginx server which forwards the request to application server. The application server is the one that is hosting our codebase and generate the dynamic content of the website.
+
+6. For it to generate the dynamic content it requires some data from the database, the apliccation serve retrieves the data from MySQL database.
+
+7. After the web content has been generate the applicatin server sends back the content to nginx server which in turn send back the information as an HTTP response. the following below is an example of an HTTP response
+
+```
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1234
+Date: Sat, 27 Mar 2023 10:30:00 GMT
+Server: Nginx/2.4.29 (Ubuntu)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example HTTP Response</title>
+</head>
+<body>
+	<h1>Hello, World!</h1>
+	<p>This is an example HTTP response.</p>
+</body>
+</html>
+```
 
