@@ -54,33 +54,26 @@ In a type of infrastrucutre we will have to add 2 more servers and 1 loadbalance
 
 ## Load Balancer - It is used to distribute incoming traffic across multiple web servers. This improves the availability and scalability of the website by allowing multiple web servers to handle the requests.
 
-The algorithm that we will use to redirect the request is the round robin algorithm whereby the requests are distributed across the group of servers sequentially and evenly 
+The algorithm that we will use to redirect the request is the round robin algorithm whereby the requests are distributed across the group of servers sequentially and evenly
 
+## web servers - we will add two more web servers each runnig nginx web server software. The web server will host the website's static files and serve them to visitors. The load balancer will disribute incoming traffic across these web servers
 
+## Application server - we will add one application server to host the application codebase. The application server will serve dyna,ic content to visitors. The web servers will be configured to forward these requests for dyna,,ic content to the application server
 
+## Database - we will add a MySQL database server to store websites data such as user information, comments an posts. The database will be configured as a Primary-Replica(Master-Slave)cluster, where the primary node will handle wites and the replica will handle reads. The primary node will replicate data changes to the replica node to ensure data consistency
 
+load balancer will be configured with round robin distribution algorithm which distributes requests evenly across all available web servers. The load balancer will enable an active-active setup, where all servers are actively handling requests.
 
+In database the primary node will handle the writes and replicate data changes to the replica node to ensure data consistency.
 
+## SINGLE POINT OF FAILURE(SPOF)
 
+There is a single point of failure in this system and that's the load balancer. If it goes down traffic will not be distributed to the web servers and the website will become unvailable.
 
+## Security Issues
 
+No firewall in this system, there is no HTTP. Without firewall the servers are vulnerable to attacks from outside sources. without https the traffic to and from the website is not encrypted, making it vulnarable to interception and tampering
 
+## Monitoring
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+There is no monitoring setup for this infrastructure, which makes it difficult to detect and address issues in a timely manner. Monitoring tools should be implemented to alert administrators of any issues and provide insights into system performance.
