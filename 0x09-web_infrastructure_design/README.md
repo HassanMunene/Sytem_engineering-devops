@@ -80,4 +80,6 @@ There is no monitoring setup for this infrastructure, which makes it difficult t
 
 # SECURED AND MONITORED WEB INFRASTRUCTURE
 
+![sec&monitored-web](https://github.com/HassanMunene/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/imgs/Network_Architecture_-_Secure_and_monitored_web_infrastructure.pdf)
+
 
