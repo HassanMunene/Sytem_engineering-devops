@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#I this script we write a script that listens on port 98 and wait for connections
+
+sudo nc -l -p 98
+
+
