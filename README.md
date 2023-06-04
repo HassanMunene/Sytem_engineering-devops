@@ -6,3 +6,9 @@ Networking is one of the Topics we will cover in this repository.
 
 ## Load balancer algorithms
 ![Weighted Scheduling Algorithm picture](https://github.com/HassanMunene/alx-system_engineering-devops/blob/master/img/1-weighted-scheduling-load-balancer.png)
+
+### round robin load balancing algorithm
+![Round robin algorithm]()
+
+### HTTPS vs HTTTP
+[HTTP VS HTTP]()
