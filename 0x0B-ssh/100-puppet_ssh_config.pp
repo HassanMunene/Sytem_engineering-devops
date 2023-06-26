@@ -2,5 +2,5 @@
 
 file{'/home/hassanmunene/.ssh/config':
 ensure  => file,
-content => "Host 100.26.10.124\n IdentintyFile ~/.ssh/school\n PasswordAuthentication no",
+content => "Host 100.26.10.124\n IdentityFile ~/.ssh/school\n PasswordAuthentication no",
 }
