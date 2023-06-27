@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# In this script in addition to changing the contents of index.html
+# we are also going to add another route /redirect_me
+
+apt-get update
+sudo apt-get install -y nginx
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+sudo sed -i '/server_name localhost;/a\
+\
+    location \/redirect_me {\
+        return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\
+    }' /etc/nginx/sites-available/default
+
+sudo systemctl restart nginx
+
