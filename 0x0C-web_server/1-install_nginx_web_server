@@ -6,8 +6,5 @@ sudo apt upgrade -y
 
 sudo apt install nginx -y
 
-file_path="/var/www/your_domain/html/index.html"
-
-sudo bash -c 'echo "Hello World!" > "$file_path"'
 sudo service nginx restart
 
