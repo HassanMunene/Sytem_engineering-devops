@@ -1,3 +1,4 @@
+# This manifest is used to configure nginx web server during installation
 package { 'nginx':
 ensure => 'installed',
 }
