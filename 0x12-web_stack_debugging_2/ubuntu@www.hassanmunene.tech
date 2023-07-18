@@ -12,7 +12,7 @@ if ! id -u "$username" >/dev/null 2>&1; then
 fi
 
 # use stream editor(sed) to configure file nginx.conf
-sed -i "s/www-data/nginx/" /etc/nginx/nginx.conf
+sed -i "s/www-data/user nginx/" /etc/nginx/nginx.conf
 
 # replace port 80 with 8080 in the default file so that the webserver will be listening now on port 8080
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
