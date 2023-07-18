@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 #first you need to give the owner permission to read and write to the config file
+
 chmod 644 /etc/nginx/nginx.conf
 
 # Create new user called nginx with no home and loggins
