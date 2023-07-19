@@ -24,4 +24,4 @@
 
     - name: Show mysql status
       debug:
-        msg: "MySQL server is {{ mysql_status.stdout_lines[0] }}"
+        msg: "MySQL server is {{ mysql_status.stdout_lines[2] }}"
