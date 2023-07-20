@@ -1,0 +1,14 @@
+- name: Playbook to install mysql on web-01 and web-02
+  hosts: Webservers
+  become: true
+  gather_facts: true
+  tasks:
+
+    - name: Ansible apt update
+      apt:
+        update_cache: yes
+
+    - name: Ansible apt install mysql version 5.7
+      apt:
+        name: mysql-server-8.0
+        state: absent
